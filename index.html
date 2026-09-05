@@ -160,6 +160,13 @@ code{font-family:var(--mono);font-size:.88em;color:var(--orange);background:var(
 .close .stamp{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
 .close .stamp span{background:var(--panel);border:1px solid var(--edge);border-radius:30px;padding:9px 20px;font-size:15px}
 
+/* demo link */
+.demo-link{display:inline-flex;align-items:center;gap:11px;background:var(--grad);color:#180f24;border-radius:8px;
+  padding:14px 22px;font-size:16px;font-weight:700;text-decoration:none;transition:opacity .2s,transform .2s}
+.demo-link svg{width:19px;height:19px;fill:currentColor;stroke:none}
+.demo-link:hover{opacity:.88;transform:translateY(-1px)}
+.demo-link:focus-visible{outline:2px solid var(--purple);outline-offset:4px}
+
 /* chrome */
 .rail{position:fixed;left:34px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;z-index:60}
 .rail i{width:7px;height:7px;border-radius:50%;background:var(--edge);border:none;padding:0;cursor:pointer;transition:all .25s}
@@ -586,6 +593,18 @@ code{font-family:var(--mono);font-size:.88em;color:var(--orange);background:var(
 </section>
 
 <!-- 20 -->
+<section class="slide mid" style="text-align:center;align-items:center">
+  <div class="grad-rule" style="margin-left:auto;margin-right:auto"></div>
+  <p class="eyebrow" style="justify-content:center">demo <b>·</b> see Kodus in action</p>
+  <h1 style="max-width:none">Watch the <span class="accent">demo</span></h1>
+  <p class="lede" style="margin-left:auto;margin-right:auto">See the review workflow, deployment, and results in action.</p>
+  <a class="demo-link" href="https://drive.google.com/file/d/1d4tXXefcRw9XaW4hPnVyqM-Usln8lwnS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    Open demo video
+  </a>
+</section>
+
+<!-- 21 -->
 <section class="slide mid close" style="text-align:center;align-items:center">
   <div class="grad-rule" style="margin-left:auto;margin-right:auto"></div>
   <p class="eyebrow" style="justify-content:center">closing</p>
@@ -612,7 +631,7 @@ code{font-family:var(--mono);font-size:.88em;color:var(--orange);background:var(
   <button id="prev" aria-label="Previous slide">←</button>
   <button id="next" aria-label="Next slide">→</button>
 </div>
-<div class="hud"><b id="cur">01</b> / <span id="tot">20</span></div>
+<div class="hud"><b id="cur">01</b> / <span id="tot">21</span></div>
 
 <script>
 (function(){
